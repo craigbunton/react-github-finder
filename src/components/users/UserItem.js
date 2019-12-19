@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
 const UserItem = ({ user: { login, avatar_url } }) => {
-  console.log("Login: ", login);
   return (
     <div className="card text-center">
       <img

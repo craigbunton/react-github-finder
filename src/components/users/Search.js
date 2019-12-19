@@ -1,13 +1,12 @@
 import React, { useState, useContext } from "react";
 import GithubContext from "../../context/github/githubContext";
 import AlertContext from "../../context/alert/alertContext";
+
 const Search = () => {
   const githubContext = useContext(GithubContext);
-
-  const { clearUsers } = githubContext;
-
   const alertContext = useContext(AlertContext);
 
+  const { clearUsers } = githubContext;
   const showClear = githubContext.users.length > 0;
 
   const [text, setText] = useState("");
